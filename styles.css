@@ -149,7 +149,7 @@ button {
 
 #histories {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
   justify-content: space-around;
 }
 
@@ -157,7 +157,9 @@ button {
   width: 100%;
   height: 100%;
   padding: 50px;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -168,6 +170,7 @@ button {
       rgba(255, 255, 255, 0.1) 0.18%,
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
+  margin: 2%;
   margin-bottom: 30px;
 }
 
@@ -191,5 +194,9 @@ button {
 
   .card {
     flex-direction: column;
+  }
+
+  #histories {
+    flex-direction: column-reverse;
   }
 }
